@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop muted>
+    </video>
+    <button type="button" name="button" onclick="pause()">pause
+    </button>
+    <button type="button" name="button" onclick="play()">play
+    </button><br>
+      <audio  id="aud" src="audio/horse.ogg" autoplay controls="controls" loop muted>
+      </audio>
+
+<button type="button" name="button" onclick="audio_pause()">pause
+</button>
+<button type="button" name="button" onclick="audio_play()">play
+</button>
+</body>
+  <script type="text/javascript">
+  function pause(){
+  var video=document.getElementById("vid");
+  video.pause();
+}
+function play(){
+var video=document.getElementById("vid");
+video.play();
+}
+function audio_pause(){
+var audio=document.getElementById("aud");
+audio.pause();
+}
+function audio_play(){
+var audio=document.getElementById("aud");
+audio.play();
+}
+  </script>
+</html>
